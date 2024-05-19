@@ -31,6 +31,9 @@ header {
     display: flex;
     align-items: center;
 }
+.logo h1{
+    font-size: small;
+}
 
 .profile-pic {
     width: 40px;
