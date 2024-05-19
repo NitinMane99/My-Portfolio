@@ -1,0 +1,134 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #131010;
+    
+    padding: 1em 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 1.5em;
+    margin: 0;
+    font-size: 1.5em;
+    margin: 0;
+    color: #FF9933; /* Saffron color */
+
+    
+}
+/* india flag */
+.name {
+    font-size: 1.5em;
+    margin: 0;
+    position: relative;
+}
+
+.name::before {
+    content: "Nitin ";
+    color: #FF9933; /* Saffron color */
+}
+
+.name::after {
+    content: " Mane";
+    color: #138808; /* Green color */
+}
+
+.name span {
+    color: #FFFFFF; /* White color */
+}
+
+.nav-menu {
+     /* Hide the nav menu by default */
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+/* hover underline */
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.nav-menu ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f509d5; /* Border color */
+    transition: width 0.3s ease-in-out; /* Transition for smooth effect */
+}
+.nav-menu ul li a:hover::after{
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none; /* Hide the menu toggle by default */
+    cursor: pointer;
+    
+}
+
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        /* Hide the nav menu on desktop screens */
+    }
+
+    .menu-toggle {
+      display: block;/* Show the menu toggle on mobile devices */
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-open .nav-menu {
+        display: block; /* Show the nav menu when the menu toggle is clicked */
+    }
+}
