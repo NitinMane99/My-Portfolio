@@ -164,10 +164,8 @@ header {
    
 }
 
-/* homepage1 */
-/* styles.css */
 
-/* Existing styles above... */
+
 
 /* Hero Section */
 .hero {
@@ -252,10 +250,7 @@ header {
     }
 }
 
-/* about section */
-/* styles.css */
 
-/* Existing styles above... */
 
 /* About Me Section */
 .about-me {
@@ -346,10 +341,6 @@ header {
     }
 }
 
-/* blog section */
-/* styles.css */
-
-/* Existing styles above... */
 
 /* Blog Section */
 .blog-section {
@@ -434,9 +425,7 @@ header {
     }
 }
 
-/* styles.css */
 
-/* Existing styles above... */
 
 /* Certification Section */
 .certifications-section {
@@ -489,3 +478,135 @@ header {
         font-size: 2rem;
     }
 }
+/* end section */
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.contact-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #181818; /* Dark color for heading */
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #FF9933; /* Saffron color */
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #FF781F; /* Darker Saffron color */
+}
+
+@media screen and (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form form {
+        padding: 0 20px;
+    }
+}
+
+/* end section */
+
+/* Footer Section */
+.footer-section {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content .name h4 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.footer-content .certifications p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+/* end section */
