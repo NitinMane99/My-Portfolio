@@ -1,6 +1,6 @@
 # Portfolio Website of Nitin Mahadev Mane
 
-![Profile Picture](images/profile-pic.jpg)
+![Profile Picture](images/mypic1.PNG)
 
 ## Table of Contents
 - [About the Project](#about-the-project)
