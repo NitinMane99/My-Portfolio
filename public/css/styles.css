@@ -9,7 +9,7 @@
 body {
     font-family: "Poppins", sans-serif;
     --color1: #fff;
-    --color2: #0a0a0a;
+    --color2: #2e2b2b;
     --color3:#c30bf1;
 }
 html{
@@ -19,7 +19,13 @@ html{
 header {
     background-color: var(--color2);
     padding: 12px 20px;
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Position the header at the top */
+    width: 100%; /* Make the header span the full width */
+    z-index: 1000; /* Set a high z-index to ensure the header appears above other content */
 }
+    
+
 
 .nav-bar {
     width: 100%;
@@ -33,7 +39,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .logo h1{
     font-size: large;
@@ -71,7 +77,9 @@ header {
 .menu {
     display: flex;
     justify-content: space-between;
-    margin-right: 50px;
+    margin-right: 30px;
+    align-items: center;
+    margin-right: 30px;
 }
 
 .menu ul {
@@ -180,7 +188,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/home-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/sales.jpg') no-repeat center center/cover;
     color: #FFF;
     text-align: center;
     margin-top: 0;
@@ -224,7 +232,7 @@ header {
 
 .hero h5 {
     font-size: 1.75rem;
-    background-color: #3a5cf5;
+    background-color: #95a5e9;
     padding: 10px 20px;
     border-radius: 5px;
     display: inline-block;
