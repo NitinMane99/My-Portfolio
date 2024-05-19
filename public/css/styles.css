@@ -12,6 +12,9 @@ body {
     --color2: #0a0a0a;
     --color3:#c30bf1;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 header {
     background-color: var(--color2);
@@ -123,6 +126,7 @@ header {
     display: none;
 }
 
+
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
@@ -156,5 +160,276 @@ header {
 
     #check:checked ~ .menu {
         right: 0;
+    }
+   
+}
+
+/* homepage1 */
+/* styles.css */
+
+/* Existing styles above... */
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/home-bg.jpg') no-repeat center center/cover;
+    color: #FFF;
+    text-align: center;
+    
+}
+
+.hero .container {
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: #FF9933; /* Saffron color for Nitin */
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 span {
+    color: #FFFFFF; /* White color for Mahadev */
+}
+
+.hero h2::after {
+    content: " Mane";
+    color: #138808; /* Green color for Mane */
+}
+
+.hero h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.hero h5 {
+    font-size: 1.75rem;
+    background-color: #3a5cf5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #FFF;
+    transition: background-color 0.3s ease;
+}
+
+.hero h5:hover {
+    background-color: #65a6e2; /* Darker Saffron color */
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero h3 {
+        font-size: 1.25rem;
+    }
+
+    .hero h4 {
+        font-size: 1rem;
+    }
+
+    .hero h5 {
+        font-size: 1.5rem;
+    }
+}
+
+/* about section */
+/* styles.css */
+
+/* Existing styles above... */
+
+/* About Me Section */
+.about-me {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.about-me .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #181818; /* Dark color for heading */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.skills {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #181818; /* Dark color for subheading */
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile p,
+    .skills ul li {
+        font-size: 1rem;
+    }
+
+    .skills h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* blog section */
+/* styles.css */
+
+/* Existing styles above... */
+
+/* Blog Section */
+.blog-section {
+    padding: 50px 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.blog-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.blog-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #181818; /* Dark color for heading */
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.post {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post h3 {
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+.post p {
+    font-size: 1rem;
+    margin: 0 15px 15px 15px;
+    color: #666;
+}
+
+.post a {
+    display: block;
+    text-align: center;
+    margin: 15px;
+    padding: 10px 0;
+    background-color: #FF9933;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.post a:hover {
+    background-color: #FF781F; /* Darker Saffron color */
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+    .post {
+        width: 100%;
+    }
+
+    .blog-section h2 {
+        font-size: 2rem;
     }
 }
