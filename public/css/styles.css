@@ -128,6 +128,7 @@ header {
     cursor: pointer;
     font-size: 1.5rem;
     display: none;
+    
 }
 
 .open-menu {
@@ -138,7 +139,8 @@ header {
 
 .close-menu {
     top: 20px;
-    right: 20px;
+    right: 10px;
+   
 }
 
 #check {
@@ -196,14 +198,12 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
     text-align: center;
-    background-color:#3a916d;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('/assets/force2.jpg'); /* Correct path to the image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     margin-top: 0;
-    
 }
 
 .hero .container {
@@ -243,7 +243,7 @@ header {
 
 .hero h5 {
     font-size: 1.75rem;
-    background-color: #95a5e9;
+    background-color: #1ee9a5;
     padding: 10px 20px;
     border-radius: 5px;
     display: inline-block;
@@ -252,7 +252,7 @@ header {
 }
 .certification h5{
     font-size: 1.75rem;
-    background-color: #4361e7;
+    background-color: #7687d3;
     padding: 10px 20px;
     border-radius: 5px;
     display: inline-block;
@@ -260,14 +260,14 @@ header {
     transition: background-color 0.3s ease;
 }
 .certification h5:hover{
-    background-color: rgb(54, 219, 219);
+    background-color: rgb(219, 25, 226);
 }
 .certification a{
     text-decoration: none;
 }
 
 .hero h5:hover {
-    background-color: #65a6e2; /* Darker Saffron color */
+    background-color: #ca39ee; /* Darker Saffron color */
 }
 
 @media screen and (max-width: 768px) {
