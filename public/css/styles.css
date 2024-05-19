@@ -50,6 +50,7 @@ header {
 
 .logo a {
     text-decoration: none;
+    
 }
 
 .profile-pic {
@@ -174,6 +175,7 @@ header {
 
     .menu li a {
         padding: 10px;
+        
     }
 
     .open-menu,
@@ -299,7 +301,7 @@ header {
 .about-me {
     padding: 50px 0;
     background-color: #f9f9f9;
-    color: #333;
+    color: #050505;
     background-image: url('/assets/back5.jpg');
     /* background-repeat: no-repeat; */
     
@@ -477,7 +479,7 @@ header {
 .certifications-section {
     padding: 50px 0;
     background-color: #f9f9f9;
-    color: #333;
+    color: #070707;
     background-image: url('/assets/back5.jpg');
 }
 
@@ -491,7 +493,7 @@ header {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 40px;
-    color: #181818; /* Dark color for heading */
+    color: #070707; /* Dark color for heading */
 }
 
 .certification {
@@ -514,7 +516,7 @@ header {
 .certification p {
     font-size: 1rem;
     margin: 0;
-    color: #666;
+    color: #0c0c0c;
 }
 
 @media screen and (max-width: 768px) {
@@ -531,7 +533,7 @@ header {
 /* Contact Section */
 .contact-section {
     padding: 50px 0;
-    color: #333;
+    color: #070707;
     background-image: url('/assets/back6.jpeg');
 }
 
