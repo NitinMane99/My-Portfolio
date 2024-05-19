@@ -11,7 +11,7 @@
 body {
     font-family: "Poppins", sans-serif;
     --color1: #fff;
-    --color2: #2e2b2b;
+    --color2: #080808;
     --color3: #c30bf1;
 }
 
@@ -112,7 +112,7 @@ header {
     bottom: 0;
     left: 0;
     width: 0;
-    height: 1px;
+    height: 3px;
     background-color: var(--color3);
     transition: 0.15s ease-in-out;
 }
@@ -613,7 +613,7 @@ button[type="submit"]:hover {
 
 /* Footer Section */
 .footer-section {
-    background-color: #333;
+    background-color: #070707;
     color: #fff;
     padding: 50px 0;
 }
@@ -715,7 +715,7 @@ button[type="submit"]:hover {
 }
 
 .skill ul li {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     margin-bottom: 15px;
     color: #666; /* Medium color for skill list items */
 }
