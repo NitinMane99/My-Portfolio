@@ -264,6 +264,7 @@ header {
 }
 .certification a{
     text-decoration: none;
+    color: black;
 }
 
 .hero h5:hover {
@@ -299,7 +300,7 @@ header {
     padding: 50px 0;
     background-color: #f9f9f9;
     color: #333;
-    background-image: url('/assets/back6.jpeg');
+    background-image: url('/assets/back5.jpg');
     /* background-repeat: no-repeat; */
     
 }
@@ -317,7 +318,7 @@ header {
 .about-content h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #181818; /* Dark color for heading */
+    color: #0e0d0d; /* Dark color for heading */
 }
 
 .profile {
@@ -339,7 +340,7 @@ header {
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
-    color: #666;
+    color: #080808;
 }
 
 .skills {
@@ -351,7 +352,7 @@ header {
 .skills h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #181818; /* Dark color for subheading */
+    color: #080808; /* Dark color for subheading */
 }
 
 .skills ul {
@@ -363,7 +364,7 @@ header {
     font-size: 1.125rem;
     line-height: 1.6;
     margin-bottom: 10px;
-    color: #666;
+    color: #0e0d0d;
 }
 
 @media screen and (max-width: 768px) {
@@ -390,7 +391,7 @@ header {
 /* Blog Section */
 .blog-section {
     padding: 50px 0;
-    background-color: #fff;
+    background-image: url('/assets/back9.jpeg');
     color: #333;
 }
 
@@ -530,16 +531,15 @@ header {
 /* Contact Section */
 .contact-section {
     padding: 50px 0;
-    background-color: #fff;
     color: #333;
-    background-image: url('/assets/back5.jpg');
+    background-image: url('/assets/back6.jpeg');
 }
 
 .contact-section .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #dfdfdf;
+    
 }
 
 .contact-section h2 {
@@ -662,7 +662,7 @@ button[type="submit"]:hover {
 /* Skills Section */
 .skills-section {
     padding: 50px 0;
-    background-color: #f9f9f9;
+    
     color: #333;
     background-image: url('/assets/back7.png');
 }
@@ -671,7 +671,7 @@ button[type="submit"]:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #dfdfdf;
+    
 }
 
 .skills-section h2 {
