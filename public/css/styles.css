@@ -620,6 +620,9 @@ button[type="submit"]:hover {
 
 /* start my skill section */
 
+/* Add to existing CSS styles */
+
+/* Skills Section */
 .skills-section {
     padding: 50px 0;
     background-color: #f9f9f9;
@@ -641,6 +644,7 @@ button[type="submit"]:hover {
 
 .skills-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 30px;
 }
@@ -676,3 +680,16 @@ button[type="submit"]:hover {
     margin-bottom: 15px;
     color: #666; /* Medium color for skill list items */
 }
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 90%;
+    }
+}
+
