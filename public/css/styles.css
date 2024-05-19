@@ -299,6 +299,9 @@ header {
     padding: 50px 0;
     background-color: #f9f9f9;
     color: #333;
+    background-image: url('/assets/back6.jpeg');
+    /* background-repeat: no-repeat; */
+    
 }
 
 .about-me .container {
@@ -474,7 +477,7 @@ header {
     padding: 50px 0;
     background-color: #f9f9f9;
     color: #333;
-    background-image: url('assets/back.jpg');
+    background-image: url('/assets/back5.jpg');
 }
 
 .certifications-section .container {
@@ -529,6 +532,7 @@ header {
     padding: 50px 0;
     background-color: #fff;
     color: #333;
+    background-image: url('/assets/back5.jpg');
 }
 
 .contact-section .container {
@@ -660,6 +664,7 @@ button[type="submit"]:hover {
     padding: 50px 0;
     background-color: #f9f9f9;
     color: #333;
+    background-image: url('/assets/back7.png');
 }
 
 .skills-section .container {
