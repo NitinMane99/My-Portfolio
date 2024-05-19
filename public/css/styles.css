@@ -1,52 +1,47 @@
 /* styles.css */
 
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    --color1: #fff;
+    --color2: #0a0a0a;
+    --color3:#c30bf1;
 }
 
 header {
-    background-color: #131010;
-    
-    padding: 1em 0;
+    background-color: var(--color2);
+    padding: 12px 20px;
 }
 
-
-.container {
+.nav-bar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    position: relative;
+    background-color: var(--color2);
 }
 
-.logo-container {
+.logo {
     display: flex;
     align-items: center;
 }
 
 .profile-pic {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
 .name {
     font-size: 1.5em;
-    margin: 0;
-    font-size: 1.5em;
-    margin: 0;
-    color: #FF9933; /* Saffron color */
-
-    
-}
-/* india flag */
-.name {
-    font-size: 1.5em;
-    margin: 0;
-    position: relative;
+    color: var(--color1);
 }
 
 .name::before {
@@ -54,81 +49,109 @@ header {
     color: #FF9933; /* Saffron color */
 }
 
+.name span {
+    color: #FFFFFF; /* White color */
+}
+
 .name::after {
     content: " Mane";
     color: #138808; /* Green color */
 }
 
-.name span {
-    color: #FFFFFF; /* White color */
+.menu {
+    display: flex;
 }
 
-.nav-menu {
-     /* Hide the nav menu by default */
-}
-
-.nav-menu ul {
+.menu ul {
+    display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-.nav-menu ul li {
-    display: inline;
-    margin-right: 20px;
+.menu li {
+    padding-left: 30px;
 }
-/* hover underline */
-.nav-menu ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    position: relative;
+/* navmenu underline hover */
+.menu li a {
     display: inline-block;
     text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
-.nav-menu ul li a::after{
-    content: '';
+
+.menu li a::after {
+    content: "";
     position: absolute;
-    width: 0;
-    height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #f509d5; /* Border color */
-    transition: width 0.3s ease-in-out; /* Transition for smooth effect */
+    width: 0;
+    height: 1px;
+    background-color: var(--color3);
+    transition: 0.15s ease-in-out;
 }
-.nav-menu ul li a:hover::after{
+
+.menu li a:hover::after {
     width: 100%;
 }
 
-.menu-toggle {
-    display: none; /* Hide the menu toggle by default */
+.open-menu, .close-menu {
+    position: absolute;
+    color: var(--color1);
     cursor: pointer;
-    
+    font-size: 1.5rem;
+    display: none;
 }
 
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
 
-@media screen and (max-width: 768px) {
-    .nav-menu {
-        /* Hide the nav menu on desktop screens */
-    }
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
 
-    .menu-toggle {
-      display: block;/* Show the menu toggle on mobile devices */
-    }
+#check {
+    display: none;
+}
 
-    .container {
+@media (max-width: 768px) {
+    .menu {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
     }
 
-    .menu-open .nav-menu {
-        display: block; /* Show the nav menu when the menu toggle is clicked */
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
     }
 }
