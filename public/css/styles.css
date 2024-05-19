@@ -185,7 +185,7 @@ header {
 }
 
 
-
+/* end header part */
 
 
 
@@ -196,11 +196,12 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
-   background-color: burlywood;
     
-    
-    color: #FFF;
     text-align: center;
+    background-color:#a5bd6f;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-top: 0;
     
 }
@@ -458,6 +459,7 @@ header {
     padding: 50px 0;
     background-color: #f9f9f9;
     color: #333;
+    background-image: url('assets/back.jpg');
 }
 
 .certifications-section .container {
@@ -476,6 +478,7 @@ header {
 .certification {
     text-align: center;
     margin-bottom: 40px;
+    /* background-image: url('assets/back.jpg'); */
 }
 
 .certification img {
@@ -517,6 +520,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    background-color: #dfdfdf;
 }
 
 .contact-section h2 {
@@ -636,11 +640,6 @@ button[type="submit"]:hover {
     color: #fff;
 }
 /* end section */
-
-/* start my skill section */
-
-/* Add to existing CSS styles */
-
 /* Skills Section */
 .skills-section {
     padding: 50px 0;
@@ -652,6 +651,7 @@ button[type="submit"]:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    background-color: #dfdfdf;
 }
 
 .skills-section h2 {
