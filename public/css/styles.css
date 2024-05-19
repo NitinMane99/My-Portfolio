@@ -198,7 +198,7 @@ header {
     height: 100vh;
     
     text-align: center;
-    background-color:#a5bd6f;
+    background-color:#3a916d;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -249,6 +249,21 @@ header {
     display: inline-block;
     color: #FFF;
     transition: background-color 0.3s ease;
+}
+.certification h5{
+    font-size: 1.75rem;
+    background-color: #4361e7;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #FFF;
+    transition: background-color 0.3s ease;
+}
+.certification h5:hover{
+    background-color: rgb(54, 219, 219);
+}
+.certification a{
+    text-decoration: none;
 }
 
 .hero h5:hover {
