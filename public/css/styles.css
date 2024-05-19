@@ -1,31 +1,33 @@
 /* styles.css */
 
+/* Reset CSS */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Global Styles */
 body {
     font-family: "Poppins", sans-serif;
     --color1: #fff;
     --color2: #2e2b2b;
-    --color3:#c30bf1;
+    --color3: #c30bf1;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
+/* Header Styles */
 header {
     background-color: var(--color2);
     padding: 12px 20px;
-    position: fixed; /* Make the header fixed */
-    top: 0; /* Position the header at the top */
-    width: 100%; /* Make the header span the full width */
-    z-index: 1000; /* Set a high z-index to ensure the header appears above other content */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
-    
-
 
 .nav-bar {
     width: 100%;
@@ -41,10 +43,12 @@ header {
     align-items: center;
     margin-left: 30px;
 }
-.logo h1{
+
+.logo h1 {
     font-size: large;
 }
-.logo a{
+
+.logo a {
     text-decoration: none;
 }
 
@@ -62,34 +66,35 @@ header {
 
 .name::before {
     content: "Nitin ";
-    color: #FF9933; /* Saffron color */
+    color: #FF9933;
 }
 
 .name span {
-    color: #FFFFFF; /* White color */
+    color: #FFFFFF;
 }
 
 .name::after {
     content: " Mane";
-    color: #138808; /* Green color */
+    color: #138808;
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
-    margin-right: 30px;
     align-items: center;
-    margin-right: 30px;
 }
 
 .menu ul {
     display: flex;
-    list-style: none;
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
 }
 
 .menu li {
     padding-left: 30px;
+    list-style: none; /* Ensure bullets are removed */
 }
+
 /* navmenu underline hover */
 .menu li a {
     display: inline-block;
@@ -99,7 +104,6 @@ header {
     transition: 0.15s ease-in-out;
     position: relative;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 
 .menu li a::after {
@@ -117,7 +121,8 @@ header {
     width: 100%;
 }
 
-.open-menu, .close-menu {
+.open-menu,
+.close-menu {
     position: absolute;
     color: var(--color1);
     cursor: pointer;
@@ -140,7 +145,7 @@ header {
     display: none;
 }
 
-
+/* Media Query for Responsive Design */
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
@@ -161,23 +166,26 @@ header {
     }
 
     .menu li {
-        margin-top: 40px;
+        margin-top: 20px; /* Adjusted margin */
+        list-style: none; /* Ensure bullets are removed for mobile view */
     }
 
     .menu li a {
         padding: 10px;
     }
 
-    .open-menu, .close-menu {
+    .open-menu,
+    .close-menu {
         display: block;
-        
     }
 
     #check:checked ~ .menu {
         right: 0;
     }
-   
 }
+
+
+
 
 
 
@@ -188,7 +196,9 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/sales.jpg') no-repeat center center/cover;
+   background-color: burlywood;
+    
+    
     color: #FFF;
     text-align: center;
     margin-top: 0;
