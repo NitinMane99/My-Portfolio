@@ -299,7 +299,8 @@ header {
     padding-left: 100%;
     animation: marquee 15s linear infinite;
     font-size: 1.2em;
-    color: rgb(7, 7, 7);
+    color: #fff;
+    background-color: black;
   }
 
   @keyframes marquee {
