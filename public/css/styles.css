@@ -288,7 +288,7 @@ header {
     background-color: rgb(35, 84, 173);
   }
   /* marque style added */
-  .marquee-container {
+  /* .marquee-container {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
@@ -300,13 +300,13 @@ header {
     animation: marquee 15s linear infinite;
     font-size: 1.2em;
     color: #fff;
-    /* background-color: black; */
+    /* background-color: black; 
   }
 
   @keyframes marquee {
     0% { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
-  }
+  } */
 
 @media screen and (max-width: 768px) {
     .hero h1 {
