@@ -300,7 +300,7 @@ header {
     animation: marquee 15s linear infinite;
     font-size: 1.2em;
     color: #fff;
-    background-color: black;
+    /* background-color: black; */
   }
 
   @keyframes marquee {
