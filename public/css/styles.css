@@ -428,7 +428,7 @@ header {
 /* Blog Section */
 .blog-section {
     padding: 50px 0;
-    background-image: url('/assets/blog3.jpg');
+    /* background-image: url('/assets/blog3.jpg'); */
     color: #333;
 }
 
@@ -515,7 +515,7 @@ header {
     padding: 50px 0;
     background-color: #f9f9f9;
     color: #070707;
-    background-image: url('/assets/back5.jpg');
+    /* background-image: url('/assets/back5.jpg'); */
 }
 
 .certifications-section .container {
@@ -701,7 +701,7 @@ button[type="submit"]:hover {
     padding: 50px 0;
     
     color: #333;
-    background-image: url('/assets/skill5.jpg');
+    background-image: url('/assets/blog3.jpg');
     background-size: cover;
 }
 

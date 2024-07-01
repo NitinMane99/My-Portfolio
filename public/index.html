@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body oncontextmenu="false">
     <header>
         <nav class="nav-bar">
             <div class="logo">
@@ -129,7 +129,7 @@
                 <div class="certification">
                     <img src="assets\trailhead.png" alt="Trailhead Ranger Certification">
                     <h3>Visit My Trailhead Profile</h3>
-                    <h5><a href="https://www.salesforce.com/trailblazer/v7ftmlwrsu24o896c2" target="_blank"> <button class="resume-button">Click Here</button></a></h5>
+                    <a href="https://www.salesforce.com/trailblazer/v7ftmlwrsu24o896c2" target="_blank"> <button class="resume-button">Click Here</button></a>
                     
                 </div>
                 
@@ -170,7 +170,7 @@
             <div class="container">
                 <h2>Contact Me</h2>
                 <div class="contact-form">
-                    <form action="https://api.web3forms.com/submit" method="POST">
+                    <form action="/submit" method="POST">
                         <input type="hidden" name="access_key" value="4f856532-538d-40c2-b65b-0b44b2406b4b">
                         <div class="form-group">
                             <label for="name">Name</label>
@@ -182,7 +182,7 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <textarea id="message" name="message" rows="4" ></textarea>
                         </div>
                         <button type="submit">Submit</button>
                     </form>
