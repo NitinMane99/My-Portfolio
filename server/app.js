@@ -18,11 +18,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
-app.post('/contact', (req, res) => {
-    // Handle form submission logic here
-    console.log(req.body);
-    res.send('Form submitted successfully!');
-});
+// app.post('/contact', (req, res) => {
+//     // Handle form submission logic here
+//     console.log(req.body);
+//     res.send('Form submitted successfully!');
+// });
 
 // Salesforce credentials
 const clientId = '3MVG9WVXk15qiz1I3qyg7tDvwSHOTWTpD734y58E62s9iaZOYmdD1RdSzvNX0XlJJJmuo3LhI7dpsqfgQxBd4';
