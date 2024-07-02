@@ -18,11 +18,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
-// app.post('/contact', (req, res) => {
-//     // Handle form submission logic here
-//     console.log(req.body);
-//     res.send('Form submitted successfully!');
-// });
+app.post('/contact', (req, res) => {
+    // Handle form submission logic here
+    console.log(req.body);
+    res.send('Form submitted successfully!');
+});
 
 // Salesforce credentials
 const clientId = '3MVG9WVXk15qiz1I3qyg7tDvwSHOTWTpD734y58E62s9iaZOYmdD1RdSzvNX0XlJJJmuo3LhI7dpsqfgQxBd4';
@@ -55,7 +55,7 @@ async function getAuthToken() {
 
 app.post('/submit', async (req, res) => {
     try {
-        const { name, email,Message } = req.body;
+        const { name, email, Message,Descryption} = req.body;
         const { accessToken, instanceUrl } = await getAuthToken();
 
         const salesforceUrl = `${instanceUrl}/services/data/v51.0/sobjects/mydataid__DataBase__c`;
@@ -63,7 +63,8 @@ app.post('/submit', async (req, res) => {
         await axios.post(salesforceUrl, {
             Name: name,
             mydataid__Email__c: email,
-            mydataid__Message__C: Message
+            mydataid__Message__c: Message,
+            mydataid__Descryption__c: Descryption
         }, {
             headers: {
                 Authorization: `Bearer ${accessToken}`,
