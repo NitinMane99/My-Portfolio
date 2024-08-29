@@ -13,13 +13,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Route to serve the main index page
+// Routes
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Route to handle contact form submission (simplified)
 app.post('/contact', (req, res) => {
+    // Handle form submission logic here
     console.log(req.body);
     res.send('Form submitted successfully!');
 });
@@ -31,7 +31,6 @@ const username = 'nitinmane25@salesforce.com';
 const password = 'Lunar@14julyaFbYyFzTqW1YDufu14RWZRnM';
 const tokenUrl = 'https://login.salesforce.com/services/oauth2/token';
 
-// Function to get Salesforce OAuth token
 async function getAuthToken() {
     try {
         const response = await axios.post(tokenUrl, null, {
@@ -54,7 +53,10 @@ async function getAuthToken() {
     }
 }
 
-// Route to handle form submission to Salesforce
+app.use(express.json());
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.post('/submit', async (req, res) => {
     try {
         const { name, email, Message, Descryption } = req.body;
@@ -78,7 +80,7 @@ app.post('/submit', async (req, res) => {
         res.status(200).sendFile(path.join(__dirname, 'public', 'success.html'));
     } catch (error) {
         console.error('Error submitting form:', error.response ? error.response.data : error.message);
-        res.status(500).send('Error submitting form');
+        res.status(500).sendFile(path.join(__dirname, 'public', 'error.html')); // Serve the error page
     }
 });
 
