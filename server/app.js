@@ -7,19 +7,19 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Serve static files from the public directory
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Parse form data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Routes
+// Route to serve the main index page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+// Route to handle contact form submission (simplified)
 app.post('/contact', (req, res) => {
-    // Handle form submission logic here
     console.log(req.body);
     res.send('Form submitted successfully!');
 });
@@ -31,6 +31,7 @@ const username = 'nitinmane25@salesforce.com';
 const password = 'Lunar@14julyaFbYyFzTqW1YDufu14RWZRnM';
 const tokenUrl = 'https://login.salesforce.com/services/oauth2/token';
 
+// Function to get Salesforce OAuth token
 async function getAuthToken() {
     try {
         const response = await axios.post(tokenUrl, null, {
@@ -53,9 +54,10 @@ async function getAuthToken() {
     }
 }
 
+// Route to handle form submission to Salesforce
 app.post('/submit', async (req, res) => {
     try {
-        const { name, email, Message,Descryption} = req.body;
+        const { name, email, Message, Descryption } = req.body;
         const { accessToken, instanceUrl } = await getAuthToken();
 
         const salesforceUrl = `${instanceUrl}/services/data/v51.0/sobjects/mydataid__DataBase__c`;
@@ -72,7 +74,8 @@ app.post('/submit', async (req, res) => {
             }
         });
 
-        res.status(200).send('Form submitted successfully');
+        // Serve the success HTML page from the 'public' directory
+        res.status(200).sendFile(path.join(__dirname, 'public', 'success.html'));
     } catch (error) {
         console.error('Error submitting form:', error.response ? error.response.data : error.message);
         res.status(500).send('Error submitting form');
