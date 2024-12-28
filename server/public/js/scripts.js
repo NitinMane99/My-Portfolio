@@ -10,3 +10,4 @@ window.onload = function () {
         spinner.classList.add('spinner-hidden'); // Hide the spinner after content loads
     }, 1000); // Adjust time as needed for your loading situation
 };
+
