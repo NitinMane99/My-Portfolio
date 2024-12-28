@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "start": "node server/app.js"
+    "start": "node server/app.js",
+    "dev": "nodemon app.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
+    "dotenv": "^16.4.7",
     "express": "^4.17.1"
   },
   "devDependencies": {
