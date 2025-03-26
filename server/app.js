@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 app.post('/contact', (req, res) => {
     // Handle form submission logic here
     console.log(req.body);
-    res.send('Form submitted successfully! By Diksha Mane');
+    res.send('Form submitted successfully!');
 });
 
 // Salesforce credentials
