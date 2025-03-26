@@ -35,7 +35,7 @@
 
 document.querySelectorAll(".menu a").forEach(item => {
             item.addEventListener("click", () => {
-                document.getElementById("check").checked = false;
+                document.getElementById("#check").checked = false;
             });
         });
 
