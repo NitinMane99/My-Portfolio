@@ -5,22 +5,22 @@
 
 
 //     // Add click event to each menu item
-//     const menuItems = document.querySelectorAll('.menu a');
-//     const checkbox = document.getElementById('check');
+    const menuItems = document.querySelectorAll('.menu a');
+    const checkbox = document.getElementById('check');
     
-//     menuItems.forEach(item => {
-//         item.addEventListener('click', (event) => {
-//             // Prevent the default link behavior
-//             event.preventDefault();
+    menuItems.forEach(item => {
+        item.addEventListener('click', (event) => {
+            // Prevent the default link behavior
+            event.preventDefault();
     
-//             // Scroll to the section smoothly
-//             const targetId = item.getAttribute('href').substring(1); // Remove '#' to get the ID
-//             document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+            // Scroll to the section smoothly
+            const targetId = item.getAttribute('href').substring(1); // Remove '#' to get the ID
+            document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
     
-//             // Uncheck the checkbox to hide the menu
-//             checkbox.checked = false;
-//         });
-//     });
+            // Uncheck the checkbox to hide the menu
+            checkbox.checked = false;
+        });
+    });
     
     
 
