@@ -46,7 +46,7 @@ const menuBtn = document.getElementById("menu-btn");
         const menuLinks = document.querySelectorAll("#menu a");
 
         // Hide menu initially
-        menu.style.display = "none";
+        //menu.style.display = "none";
 
         // Open menu on button click
         // menuBtn.addEventListener("click", () => {
