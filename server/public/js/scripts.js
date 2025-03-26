@@ -49,14 +49,14 @@ const menuBtn = document.getElementById("menu-btn");
         menu.style.display = "none";
 
         // Open menu on button click
-        menuBtn.addEventListener("click", () => {
-            menu.style.display = "block";
-        });
+        // menuBtn.addEventListener("click", () => {
+        //     menu.style.display = "block";
+        // });
 
-        // Close menu on close button click
-        closeBtn.addEventListener("click", () => {
-            menu.style.display = "none";
-        });
+        // // Close menu on close button click
+        // closeBtn.addEventListener("click", () => {
+        //     menu.style.display = "none";
+        // });
 
         // Close menu when a menu item is clicked
         menuLinks.forEach(link => {
